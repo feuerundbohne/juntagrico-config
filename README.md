@@ -1,2 +1,2 @@
-Juntagrico Demo Repo
-====================
+Juntagrico Repo Instanz für Feuer&Bohne
+=======================================
