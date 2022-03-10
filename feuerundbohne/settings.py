@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'adminsortable2',
     'feuerundbohne',
+    'polymorphic',
 ]
 
 ROOT_URLCONF = 'feuerundbohne.urls'
@@ -100,6 +101,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'impersonate.middleware.ImpersonateMiddleware'
+    'django.contrib.sites.middleware.CurrentSiteMiddleware'
 ]
 
 EMAIL_HOST = os.environ.get('JUNTAGRICO_EMAIL_HOST')
@@ -128,6 +130,7 @@ if DEBUG is True:
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
 
 IMPERSONATE = {
     'REDIRECT_URL': '/my/profile',
@@ -167,4 +170,3 @@ SHARE_PRICE = "250"
 
 INFO_EMAIL = "solawi.olten@gmail.com"
 SERVER_URL = "www.feuerundbohne.ch"
-STYLE_SHEET = "/static/feuerundbohne/css/customize.css"
