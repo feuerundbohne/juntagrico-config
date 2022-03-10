@@ -14,7 +14,7 @@ SECRET_KEY = os.environ.get('JUNTAGRICO_SECRET_KEY')
 
 DEBUG = os.environ.get("JUNTAGRICO_DEBUG", 'False')=='True'
 
-ALLOWED_HOSTS = ['feuerundbohne.juntagrico.science', 'localhost',]
+ALLOWED_HOSTS = ['feuerundbohne.juntagrico.science', 'localhost', 'fubatja.ch']
 
 
 # Application definition
@@ -166,5 +166,5 @@ ORGANISATION_BANK_CONNECTION = {"PC" : "11-333-555",
 SHARE_PRICE = "250"
 
 INFO_EMAIL = "solawi.olten@gmail.com"
-SERVER_URL = "www.feuerundbohne.org"
+SERVER_URL = "www.feuerundbohne.ch"
 STYLE_SHEET = "/static/feuerundbohne/css/customize.css"
