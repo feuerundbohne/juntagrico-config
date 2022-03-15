@@ -153,17 +153,17 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 """
      juntagrico Settings
 """
-ORGANISATION_NAME = "Feuer&Bohne"
-ORGANISATION_LONG_NAME = "Feuer&Bohne"
-ORGANISATION_ADDRESS = {"name":"Feuer&Bohne", 
+ORGANISATION_NAME = "Genossenschaft Feuer&Bohne"
+ORGANISATION_LONG_NAME = "Genossenschaft Feuer&Bohne"
+ORGANISATION_ADDRESS = {"name":"Genossenschaft Feuer&Bohne", 
             "street" : "Hombergstrasse",
             "number" : "3",
             "zip" : "4600",
             "city" : "Olten",
             "extra" : ""}
-ORGANISATION_BANK_CONNECTION = {"PC" : "11-333-555",
-            "IBAN" : "ch20111122223333444455",
-            "BIC" : "4600",
+ORGANISATION_BANK_CONNECTION = {"PC" : "46-110-7",
+            "IBAN" : "CH21 0839 0038 7046 1010 7",
+            "BIC" : "ABSOCH22XXX",
             "NAME" : "Alternative Bank Schweiz",
             "ESR" : ""}
 SHARE_PRICE = "250"
