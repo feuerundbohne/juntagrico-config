@@ -151,6 +151,12 @@ MEDIA_ROOT = 'media'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 """
+     STYLE_SHEET Settings
+"""
+
+STYLES = {'static': ['feuerundbohne/css/customize.css']}
+
+"""
      juntagrico Settings
 """
 ORGANISATION_NAME = "Genossenschaft Feuer&Bohne"
