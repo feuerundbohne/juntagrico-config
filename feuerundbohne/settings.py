@@ -157,6 +157,12 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 STYLES = {'static': ['feuerundbohne/css/customize.css']}
 
 """
+     FAVICON Settings
+"""
+
+FAVICON = {"/static/feuerundbohne/img/Boehnli_33x32.ico"}
+
+"""
      juntagrico Settings
 """
 ORGANISATION_NAME = "Genossenschaft Feuer&Bohne"
