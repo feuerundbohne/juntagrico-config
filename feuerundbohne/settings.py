@@ -182,3 +182,11 @@ SHARE_PRICE = "250"
 
 INFO_EMAIL = "solawi.olten@gmail.com"
 SERVER_URL = "www.feuerundbohne.ch"
+
+"""
+     eingefügt von Lorenz am 20.03.2022 nach Anweisung von David Simmen (slack chat)
+"""
+FROM_FILTER = {
+    'filter_expression': 'info@fubatja\.ch',
+    'replacement_from': 'info@fubatja.ch'
+}
