@@ -193,4 +193,5 @@ FROM_FILTER = {
 
 EMAILS = {
     'a_member_created': 'feuerundbohne_emails/admin/member_created.txt',
+    'welcome': 'feuerundbohne_emails/member/member_welcome.txt',
 }
