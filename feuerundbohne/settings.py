@@ -190,3 +190,7 @@ FROM_FILTER = {
     'filter_expression': 'info@fubatja\.ch',
     'replacement_from': 'info@fubatja.ch'
 }
+
+EMAILS = {
+    'a_member_created': 'feuerundbohne_emails/admin/member_created.txt',
+}
