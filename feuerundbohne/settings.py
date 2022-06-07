@@ -180,7 +180,7 @@ ORGANISATION_BANK_CONNECTION = {"PC" : "46-110-7",
             "ESR" : ""}
 SHARE_PRICE = "250"
 
-INFO_EMAIL = "solawi.olten@gmail.com"
+INFO_EMAIL = "info@feuerundbohne.ch"
 SERVER_URL = "www.feuerundbohne.ch"
 
 """
