@@ -169,7 +169,7 @@ ORGANISATION_NAME = "Genossenschaft Feuer&Bohne"
 ORGANISATION_LONG_NAME = "Genossenschaft Feuer&Bohne"
 ORGANISATION_ADDRESS = {"name":"Genossenschaft Feuer&Bohne", 
             "street" : "Hombergstrasse",
-            "number" : "3",
+            "number" : "53",
             "zip" : "4600",
             "city" : "Olten",
             "extra" : ""}
