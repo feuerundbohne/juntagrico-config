@@ -33,6 +33,7 @@ INSTALLED_APPS = [
     'adminsortable2',
     'feuerundbohne',
     'polymorphic',
+    'juntagrico_assignment_request',
 ]
 
 ROOT_URLCONF = 'feuerundbohne.urls'
