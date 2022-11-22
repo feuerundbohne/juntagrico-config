@@ -22,6 +22,6 @@ urlpatterns = [
     re_path(r'^', include('juntagrico.urls')),
     re_path(r'^$', juntagrico.views.home),
     re_path(r'^impersonate/', include('impersonate.urls')),
-    path(r'', include('juntagrico_assignment_request.urls')),
+    re_path(r'', include('juntagrico_assignment_request.urls')),
 ]
 
