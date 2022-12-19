@@ -1,7 +1,7 @@
 #: juntagrico/templates/signup.html:34
 #, python-format
 msgid ""
-"Die Mitgliedschaft bei %(v_d_enriched_organisation)s ist geknüpft an den "
+"Herzlich willkommen bei Feuer&Bohne! Die Mitgliedschaft bei %(v_d_enriched_organisation)s ist geknüpft an den "
 "Erwerb von %(v_share_pl)s in der Höhe von CHF %(c_share_price)s pro "
 "%(v_share)s. Die Anzahl %(v_share_pl)s ist abhängig von den "
 "%(v_subscription)s-Bestandteilen. Die %(v_share_pl)s sind das Kapital, das "
