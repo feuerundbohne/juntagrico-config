@@ -249,7 +249,7 @@ class RegisterMemberForm(MemberBaseForm):
             )
         else:
             return _('Ich erkläre meinen Willen, "{}" beizutreten. '
-                     'Hiermit beantrage ich meine Aufnahme. Ich bin damit einverstanden, dass Fotos von mir auf der Internetseite der Genossenschaft veröffentlicht werden. Wenn ich das nicht möchte, kontaktiere ich Feuer&Bohne per Mail (info@feuerundbohne.ch).').format(Config.organisation_long_name())
+                     'Hiermit beantrage ich meine Aufnahme.' 'Ich bin damit einverstanden, dass Fotos von mir auf der Internetseite der Genossenschaft veröffentlicht werden.' 'Wenn ich das nicht möchte, kontaktiere ich Feuer&Bohne per Mail (info@feuerundbohne.ch).').format(Config.organisation_long_name())
 
 
 class RegisterSummaryForm(Form):
