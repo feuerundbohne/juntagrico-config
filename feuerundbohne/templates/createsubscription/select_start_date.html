@@ -15,11 +15,11 @@
             <div class="col-md-12">
                 {% trans "Info" %}:
                 {% blocktrans trimmed with sd=start_date|date:"d.m.Y" %}
-                Normalerweise ist der {{ v_subscription }}-Start der Start eines Geschäftsjahres. Das nächste
-                Startdatum wäre der <b>{{ sd }}</b>.
-                Es kann jedoch vorkommen, dass unter dem Jahr 1 {{ v_subscription }} frei wird. Würdest du
-                gerne schon früher einsteigen falls 1 {{ v_subscription }} frei wird, dann kannst du das
-                Startdatum unten anpassen.
+                Normalerweise beginnt ein {{ v_subscription }} zeitgleich zum Geschäftsjahr, also jeweils am <b>{{ sd }}</b> des folgenden Jahres.
+                Es kann jedoch vorkommen, dass unter dem Jahr ein {{ v_subscription }} frei wird. Würdest du
+                gerne schon früher einsteigen falls ein {{ v_subscription }} frei wird, dann kannst du das
+                Startdatum unten anpassen. <br />
+                <b><font color="#ff0000">Momentan hat es noch unbelegte Abos, du kannst das Startdatum also frei wählen</font></b> <br />
                 {% endblocktrans %}
             </div>
         </div>
@@ -33,7 +33,7 @@
                     <label>
                         {{ subscriptionform.start_date }}
                         {% blocktrans trimmed %}
-                        Gilt nur insofern 1 {{ v_subscription }}
+                        Gilt nur, insofern ein {{ v_subscription }}
                         zum gewünschten Datum frei ist.
                         {% endblocktrans %}
                     </label>
