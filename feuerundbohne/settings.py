@@ -167,8 +167,8 @@ FAVICON = {"/static/feuerundbohne/img/Boehnli_33x32.ico"}
 """
      juntagrico Settings
 """
-ORGANISATION_NAME = "Genossenschaft Feuer&Bohne"
-ORGANISATION_LONG_NAME = "Genossenschaft Feuer&Bohne"
+ORGANISATION_NAME = "Feuer&Bohne"
+ORGANISATION_LONG_NAME = "Feuer&Bohne"
 ORGANISATION_ADDRESS = {"name":"Genossenschaft Feuer&Bohne", 
             "street" : "Hombergstrasse",
             "number" : "53",
