@@ -243,7 +243,7 @@ class RegisterMemberForm(MemberBaseForm):
                 documents_html.append('<a target="_blank" href="{}">{}</a>'.format(link(), _(text)))
         if documents_html:
             return _('Ich habe {} gelesen und erkläre meinen Willen, "{}" beizutreten. '
-                     'Hiermit beantrage ich meine Aufnahme.').format(
+                     'Hiermit beantrage ich meine Aufnahme. Ich bin damit einverstanden, dass Fotos von mir auf der Internetseite der Genossenschaft veröffentlicht werden. Wenn ich das nicht möchte, kontaktiere ich Feuer&Bohne per Mail (info@feuerundbohne.ch).').format(
                 (' ' + _('und') + ' ').join(documents_html),
                 Config.organisation_long_name()
             )
