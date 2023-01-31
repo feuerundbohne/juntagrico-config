@@ -15,11 +15,10 @@
             <div class="col-md-12">
                 {% trans "Info" %}:
                 {% blocktrans trimmed with sd=start_date|date:"d.m.Y" %}
-                Normalerweise beginnt ein {{ v_subscription }} zeitgleich zum Geschäftsjahr, also jeweils am <b>{{ sd }}</b> des folgenden Jahres.
-                Es kann jedoch vorkommen, dass unter dem Jahr ein {{ v_subscription }} frei wird. Würdest du
-                gerne schon früher einsteigen falls ein {{ v_subscription }} frei wird, dann kannst du das
-                Startdatum unten anpassen. <br />
-                <b><font color="#ff0000">Momentan hat es noch unbelegte Abos, du kannst das Startdatum also frei wählen</font></b> <br />
+                
+                Das {{ v_subscription }} läuft jeweils vom <b>01.01. bis 31.12.</b> und verlängert sich automatisch um ein weiteres Jahr, mit dem <b>30. September</b> als spätesten Kündigungstermin für das Folgejahr. 
+                Ein unterjähriger Eintritt ist möglich, wenn es freie Abos hat. Die Laufzeit verlängert sich dadurch jedoch nicht.
+                <b><font color="#ff0000">Momentan hat es noch unbelegte Abos, das Startdatum ist somit frei wählbar</font></b> <br />
                 {% endblocktrans %}
             </div>
         </div>
