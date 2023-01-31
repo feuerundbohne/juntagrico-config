@@ -86,7 +86,7 @@ class SubscriptionType(JuntagricoBaseModel):
         if self.has_periods:
             return None  # price list already shows end of periods
         date = temporal.end_of_business_year()
-        return _('Bis {day}.{month}. Automatische Verlängerung.').format(day=date.day, month=date.month)
+        return _('Bis {day}.{month}.').format(day=date.day, month=date.month)
 
     @property
     def display_name(self):
