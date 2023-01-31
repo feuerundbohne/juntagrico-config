@@ -8,3 +8,12 @@ msgid ""
 "vor allem zur Finanzierung von Investitionen – zum Beispiel Infrastruktur – "
 "verwendet wird. Beim Austritt werden die %(v_share_pl)s rückerstattet."
 msgstr ""
+
+#: juntagrico/entity/subtypes.py:85
+msgid "{} Tage."
+msgstr ""
+
+#: juntagrico/entity/subtypes.py:89
+#, python-brace-format
+msgid "Bis {day}.{month}."
+msgstr ""
