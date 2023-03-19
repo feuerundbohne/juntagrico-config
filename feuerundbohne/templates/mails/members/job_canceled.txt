@@ -14,7 +14,7 @@ Dein Arbeitseinsatz "{{ jtg }}" um {{ jt }}-{{ jet }} wurde leider Abgesagt.
 {% trans "Zeit" %}:            {{ job.time |date:"d.m.Y H:i" }}-{{ job.end_time|date:"H:i" }}
 {% trans "Ort" %}:             {{ job.type.location }}
 {% blocktrans trimmed%}
-Es tut uns leid und wir hoffen, dich bei einem anderen Einsatz wieder zu sehen!
+Wir hoffen, dich bei einem anderen Einsatz wieder zu sehen!
 {% endblocktrans %}
 
 {% blocktrans trimmed %}
