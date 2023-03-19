@@ -16,7 +16,7 @@ Du hast dich für den Arbeitseinsatz "{{ jtg }}" am {{ jt }}-{{ jet }} eingeschr
 {% trans "Ort" %}:             {{ job.type.location }}
 
 {% blocktrans trimmed%}
-Wir freuen uns, dich zu sehen, und zählen auf dich!
+Wir freuen uns, dich zu sehen, und zählen auf dich.
 {% endblocktrans %}
 
 {% blocktrans trimmed %}
