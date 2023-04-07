@@ -1,55 +1,7 @@
 .juntagrico-logo {
-    background: url(/static/feuerundbohne/img/logo-small.png) no-repeat 0 0;
+    background: url(/static/feuerundbohne/img/logo.png) no-repeat 0 0;
     background-size: contain;
     display: inline-block;
-}
-
-/* general stuff  checked */
-html, body {
-    font-family: "Source Sans Pro Light";
-    background-color: #eeeeee;
-    height: 100%;
-}
-a {
-    color: #95b53d;
-}
-
-a:hover, a:focus {
-    color: #a84b79;
-}
-
-/* title stuff checked */
-.page-title h3, .allcontent h3 {
-    margin-top: 0;
-    margin-bottom: 40px;
-    color: #95b53d;
-    font-size: 30pt;
-}
-
-.nav-link.active, .nav-link.active:focus {
-    color: #95b53d;
-}
-
-.nav-link:hover {
-    color: #95b53d;
-}
-
-.nav-link.yellow {
-    color: #a84b79;
-}
-
-/* arrows for collapsible list elements */
-.details-control, .shown .details-control {
-    font-family: 'Font Awesome 5 Free';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 27px;
-    line-height: 1;
-    color: #95b53d;
-}
-
-/* cookie consent stuff checked */
-.cc-window{
-    font-family: "Source Sans Pro Light";
-    background-color: #eeeeee;
+    width: 580px;
+    height: 161px;
 }
