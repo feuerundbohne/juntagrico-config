@@ -27,11 +27,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.admin',
+    'feuerundbohne',
     'juntagrico',
+    'fontawesomefree',  # benötigt ab 1.6
+    'import_export',  # benötigt ab 1.6
     'impersonate',
     'crispy_forms',
     'adminsortable2',
-    'feuerundbohne',
     'polymorphic',
     'juntagrico_assignment_request'
 ]
