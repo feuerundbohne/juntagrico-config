@@ -108,6 +108,8 @@ MIDDLEWARE = [
     'django.contrib.sites.middleware.CurrentSiteMiddleware'
 ]
 
+IMPORT_EXPORT_EXPORT_PERMISSION_CODE = 'view'
+
 EMAIL_HOST = os.environ.get('JUNTAGRICO_EMAIL_HOST')
 EMAIL_HOST_USER = os.environ.get('JUNTAGRICO_EMAIL_USER')
 EMAIL_HOST_PASSWORD = os.environ.get('JUNTAGRICO_EMAIL_PASSWORD')
@@ -147,7 +149,7 @@ IMPERSONATE = {
     'REDIRECT_URL': '/my/profile',
 }
 
-LOGIN_REDIRECT_URL = "/my/home"
+LOGIN_REDIRECT_URL = "/"
 
 """
     File & Storage Settings
@@ -191,8 +193,14 @@ ORGANISATION_BANK_CONNECTION = {"PC" : "46-110-7",
             "ESR" : ""}
 SHARE_PRICE = "250"
 
-INFO_EMAIL = "info@feuerundbohne.ch"
-SERVER_URL = "www.feuerundbohne.ch"
+CONTACTS = {
+    "general": "info@feuerundbohne.ch"
+}
+
+ORGANISATION_WEBSITE = {
+    'name': "www.feuerundbohne.ch",
+    'url': "https://www.feuerundbohne.ch"
+}
 
 """
      eingefügt von Lorenz am 20.03.2022 nach Anweisung von David Simmen (slack chat)
