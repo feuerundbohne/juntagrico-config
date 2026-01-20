@@ -211,9 +211,4 @@ FROM_FILTER = {
     'replacement_from': 'info@fubatja.ch'
 }
 
-EMAILS = {
-    'a_member_created': 'feuerundbohne_emails/admin/member_created.txt',
-    'welcome': 'feuerundbohne_emails/member/member_welcome.txt',
-}
-
 ASSIGNMENT_UNIT = "HOURS"
