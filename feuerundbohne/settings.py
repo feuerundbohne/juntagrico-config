@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.admin',
     'feuerundbohne',
+    'juntagrico_assignment_request',
     'juntagrico',
     'fontawesomefree',  # benötigt ab 1.6
     'import_export',  # benötigt ab 1.6
@@ -35,7 +36,6 @@ INSTALLED_APPS = [
     'crispy_forms',
     'adminsortable2',
     'polymorphic',
-    'juntagrico_assignment_request'
 ]
 
 ROOT_URLCONF = 'feuerundbohne.urls'
@@ -209,11 +209,6 @@ ORGANISATION_WEBSITE = {
 FROM_FILTER = {
     'filter_expression': 'info@fubatja\.ch',
     'replacement_from': 'info@fubatja.ch'
-}
-
-EMAILS = {
-    'a_member_created': 'feuerundbohne_emails/admin/member_created.txt',
-    'welcome': 'feuerundbohne_emails/member/member_welcome.txt',
 }
 
 ASSIGNMENT_UNIT = "HOURS"
