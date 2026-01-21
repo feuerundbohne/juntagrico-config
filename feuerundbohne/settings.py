@@ -3,10 +3,9 @@ Django settings for feuerundbohne project.
 """
 
 import os
+from pathlib import Path
 
-# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 # SECURITY WARNING: keep the secret key used in production secret!
@@ -54,7 +53,7 @@ DATABASES = {
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'feuerundbohne/templates')],  # location of your overriding templates
+        'DIRS': [BASE_DIR / 'feuerundbohne/templates'],  # location of your overriding templates
         'OPTIONS': {
             'context_processors': [
                 'django.contrib.auth.context_processors.auth',
@@ -120,22 +119,8 @@ EMAIL_USE_SSL = os.environ.get('JUNTAGRICO_EMAIL_SSL', 'False')=='True'
 
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.PickleSerializer'
 
-WHITELIST_EMAILS = []
 
-def whitelist_email_from_env(var_env_name):
-    email = os.environ.get(var_env_name)
-    if email:
-        WHITELIST_EMAILS.append(email.replace('@gmail.com', '(\+\S+)?@gmail.com'))
-
-
-if DEBUG is True:
-    for key in os.environ.keys():
-        if key.startswith("JUNTAGRICO_EMAIL_WHITELISTED"):
-            whitelist_email_from_env(key)
-            
-
-
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = BASE_DIR / 'static'
 STATIC_URL = '/static/'
 STORAGES = {
     "default": {
@@ -174,7 +159,7 @@ STYLES = {'static': ['feuerundbohne/css/customize.css']}
      FAVICON Settings
 """
 
-FAVICON = {"/static/feuerundbohne/img/Boehnli_33x32.ico"}
+FAVICON = "/static/feuerundbohne/img/Boehnli_33x32.ico"
 
 """
      juntagrico Settings
