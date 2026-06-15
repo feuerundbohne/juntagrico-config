@@ -26,9 +26,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.admin',
+    'feuerundbohne',
     'juntagrico_assignment_request',
     'juntagrico',
-    'feuerundbohne',
     'fontawesomefree',  # benötigt ab 1.6
     'import_export',  # benötigt ab 1.6
     'impersonate',
@@ -71,7 +71,7 @@ TEMPLATES = [
 #                'django.template.loaders.filesystem.Loader',
 #                'django.template.loaders.app_directories.Loader'
 #            ],
-            'debug' : True
+            'debug' : False
         },
     },
 ]
