@@ -26,9 +26,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.admin',
-    'feuerundbohne',
     'juntagrico_assignment_request',
     'juntagrico',
+    'feuerundbohne',
     'fontawesomefree',  # benötigt ab 1.6
     'import_export',  # benötigt ab 1.6
     'impersonate',
