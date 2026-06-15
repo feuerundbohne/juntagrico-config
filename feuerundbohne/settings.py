@@ -54,7 +54,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'APP_DIRS': True,
-        #'DIRS': [BASE_DIR / 'feuerundbohne/templates'],  # location of your overriding templates
+        'DIRS': BASE_DIR + '/' + 'feuerundbohne/templates',  # location of your overriding templates
         'OPTIONS': {
             'context_processors': [
                 'django.contrib.auth.context_processors.auth',
