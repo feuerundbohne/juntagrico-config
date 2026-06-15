@@ -67,10 +67,10 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'juntagrico.context_processors.vocabulary',
             ],
-            'loaders': [
-                'django.template.loaders.filesystem.Loader',
-                'django.template.loaders.app_directories.Loader'
-            ],
+#            'loaders': [
+#                'django.template.loaders.filesystem.Loader',
+#                'django.template.loaders.app_directories.Loader'
+#            ],
             'debug' : True
         },
     },
