@@ -195,7 +195,7 @@ ORGANISATION_WEBSITE = {
      eingefügt von Lorenz am 20.03.2022 nach Anweisung von David Simmen (slack chat)
 """
 FROM_FILTER = {
-    'filter_expression': 'info@fubatja\.ch',
+    'filter_expression': r'info@fubatja\.ch',
     'replacement_from': 'info@fubatja.ch'
 }
 
