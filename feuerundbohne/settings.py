@@ -14,7 +14,7 @@ SECRET_KEY = os.environ.get('JUNTAGRICO_SECRET_KEY')
 
 DEBUG = os.environ.get("JUNTAGRICO_DEBUG", 'False')=='True'
 
-ALLOWED_HOSTS = ['feuerundbohne.juntagrico.science', 'localhost', 'fubatja.ch']
+ALLOWED_HOSTS = ['feuerundbohne.juntagrico.science', 'localhost', 'fubatja.ch', 'www.fubatja.ch']
 
 
 # Application definition
