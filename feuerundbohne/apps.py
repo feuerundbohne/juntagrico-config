@@ -14,4 +14,4 @@ class MyConfig(AppConfig):
             RegisterMemberForm.text['accept_with_docs'] += accept_fotos
             RegisterMemberForm.text['accept_wo_docs'] += accept_fotos
         except Exception as e:
-            raise ValueError(f"exception: {e}\ndebug: {RegisterMemberForm.text}\n {RegisterMemberForm.text.keys}")
+            raise ValueError(f"exception: {e} - debug: {RegisterMemberForm.text} - {RegisterMemberForm.text.keys}")
