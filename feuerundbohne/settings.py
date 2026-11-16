@@ -180,8 +180,19 @@ ORGANISATION_BANK_CONNECTION = {"PC" : "46-110-7",
             "BIC" : "ABSOCH22XXX",
             "NAME" : "Alternative Bank Schweiz",
             "ESR" : ""}
+MEMBERSHIP = {
+    'enable': True,
+    'required_shares': 1,
+    'cumulative_shares': False,
+    'required_on_signup': False,
+    'fee': 0,
+    'sync_shares': True,
+}
+REQUIRED_SHARES = 0
 SHARE_PRICE = "250"
-
+CURRENCY = "{} CHF"
+ALLOW_JOB_UNSUBSCRIBE = True
+BUSINESS_YEAR_CANCELATION_MONTH = 9
 CONTACTS = {
     "general": "info@feuerundbohne.ch"
 }
