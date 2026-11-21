@@ -14,7 +14,7 @@ class MyConfig(AppConfig):
         original_init = RegisterMemberForm.__init__
         def custom_init(self, *args, **kwargs):
             original_init(self, *args, **kwargs)
-            self.field['accept_fotos'] = BooleanFields(required=True, label=accept_fotos)
+            self.fields['accept_fotos'] = BooleanField(required=True, label=accept_fotos)
             self.helper.layout.insert(-1, 'accept_fotos')
         RegisterMemberForm.__init__ = custom_init
  #       RegisterMemberForm.text['accept_fotos'] += accept_fotos
