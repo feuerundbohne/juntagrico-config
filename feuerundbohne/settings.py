@@ -204,14 +204,14 @@ ORGANISATION_WEBSITE = {
 
 BUSINESS_REGULATIONS = "https://www.feuerundbohne.ch/app/download/12971934726/Betriebsreglement_ab+GV+2024.pdf?t=1755644483"
 BYLAWS = "https://www.feuerundbohne.ch/app/download/12959423926/Statuten.pdf?t=1755644483"
-DOCUMENTS = [
-    (('Betriebsreglement', 'das Betriebsreglement'), BUSINESS_REGULATIONS, 'account-signup-accept subscription'),
-    (('Statuten (Ausgabe 06.12.2021)', 'die Statuten'), BYLAWS, 'membership-signup-accept account subscription'),
+#DOCUMENTS = [
+#    (('Betriebsreglement', 'das Betriebsreglement'), BUSINESS_REGULATIONS, 'account-signup-accept subscription'),
+#    (('Statuten (Ausgabe 06.12.2021)', 'die Statuten'), BYLAWS, 'membership-signup-accept account subscription'),
 #    ((_('DSGVO Infos'), _('die DSGVO Infos')), GDPR_INFO, 'account-signup-accept subscription'),
 #    (_('Häufig gestellte Fragen'), FAQ_DOC, 'account subscription'),
 #    (_('Infos zu den Zusatz-Abos'), EXTRA_SUB_INFO, 'extrasub'),
 #    (_('Infoblatt'), ACTIVITY_AREA_INFO, 'activityarea'),
-]
+#]
 
 """
      eingefügt von Lorenz am 20.03.2022 nach Anweisung von David Simmen (slack chat)
