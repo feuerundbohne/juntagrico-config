@@ -10,8 +10,10 @@ class MyConfig(AppConfig):
         accept_fotos = (' Ich bin damit einverstanden, dass Fotos von mir auf der Internetseite der '
                         'Genossenschaft veröffentlicht werden. Wenn ich das nicht möchte, kontaktiere '
                         'ich Feuer&Bohne per Mail (info@feuerundbohne.ch).')
-        RegisterMemberForm.text['accept_with_docs'] += accept_fotos
-        RegisterMemberForm.text['accept_wo_docs'] += accept_fotos
+        RegisterMemberForm.text['accept_fotos'] += accept_fotos
+        
+        #RegisterMemberForm.text['accept_with_docs'] += accept_fotos
+        #RegisterMemberForm.text['accept_wo_docs'] += accept_fotos
   #      try:
   #          RegisterMemberForm.text['accept_with_docs'] += accept_fotos
   #          RegisterMemberForm.text['accept_wo_docs'] += accept_fotos
