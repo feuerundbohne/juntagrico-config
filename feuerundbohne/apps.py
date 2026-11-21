@@ -17,13 +17,3 @@ class MyConfig(AppConfig):
             self.fields['accept_fotos'] = BooleanField(required=True, label=accept_fotos)
             self.helper.layout.insert(-1, 'accept_fotos')
         RegisterMemberForm.__init__ = custom_init
- #       RegisterMemberForm.text['accept_fotos'] += accept_fotos
-        
-        #RegisterMemberForm.text['accept_with_docs'] += accept_fotos
-        #RegisterMemberForm.text['accept_wo_docs'] += accept_fotos
-#        try:
-#            RegisterMemberForm.text['accept_with_docs'] += accept_fotos
-#            RegisterMemberForm.text['accept_wo_docs'] += accept_fotos
-#        except Exception as e:
-#            pass
-            #raise ValueError(f"exception: {e} - debug: {RegisterMemberForm.text}")
