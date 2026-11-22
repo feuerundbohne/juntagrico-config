@@ -1,0 +1,51 @@
+{% extends "juntagrico/signup/base.html" %}
+{% load i18n %}
+{% load juntagrico.config %}
+
+{% block title %}
+    {% trans "Wähle dein Startdatum" %}
+{% endblock %}
+
+{% block intro %}
+    {% trans "Info" %}:
+    {% blocktrans trimmed with sd=start_date|date:"d.m.Y" v_subscription=vocabulary.subscription %}
+    Das {{ v_subscription }} kann zu Beginn jedes Monats starten. Der Preis sowie die Anzahl der 
+    Arbeitseinsätze werden anteilig angepasst.
+    {% endblocktrans %}
+{% endblock %}
+
+{% block content %}
+    <form action="" method="post">
+        {% csrf_token %}
+        <div id="start_date" class="form-group row">
+            <div class="col-md-12">
+                <label>
+                    {% block label %}
+                        {% trans "Gewünschtes Startdatum" %}
+                    {% endblock %}
+                    {{ subscriptionform.start_date }}
+                    {% block hint %}
+                        {% blocktrans trimmed with v_subscription=vocabulary.subscription %}
+                        Das wird geprüft und das effektive Startdatum per Mail kommuniziert.
+                        {% endblocktrans %}
+                    {% endblock %}
+                </label>
+                {% if subscriptionform.start_date.errors %}
+                    <div class="alert alert-danger">
+                        {% trans "Das gewählte Startdatum ist nicht gültig" %}
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+        <div class="form-actions row">
+            <div class="col-md-12">
+                <button type="submit" class="btn btn-success">
+                    {% trans "Weiter" %}
+                </button>
+                <a href="{% url 'cs-cancel' %}" class="btn">
+                    {% trans "Abbrechen" %}
+                </a>
+            </div>
+        </div>
+    </form>
+{% endblock %}
