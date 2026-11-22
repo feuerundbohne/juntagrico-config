@@ -7,10 +7,10 @@
 {% endblock %}
 
 {% block intro %}
-    {% trans "Info" %}:
     {% blocktrans trimmed with sd=start_date|date:"d.m.Y" v_subscription=vocabulary.subscription %}
-    Das {{ v_subscription }} kann zu Beginn jedes Monats starten. Der Preis sowie die Anzahl der 
-    Arbeitseinsätze werden anteilig angepasst.
+    Das {{ v_subscription }} kann zu Beginn jedes Monats starten. 
+
+    Der Preis sowie die Anzahl der Arbeitseinsätze werden anteilig angepasst.
     {% endblocktrans %}
 {% endblock %}
 
