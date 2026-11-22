@@ -9,7 +9,8 @@
 {% block intro %}
     {% blocktrans trimmed with sd=start_date|date:"d.m.Y" v_subscription=vocabulary.subscription %}
     Das {{ v_subscription }} kann zu Beginn jedes Monats starten. 
-
+    {% endblocktrans %}
+    {% blocktrans %}
     Der Preis sowie die Anzahl der Arbeitseinsätze werden anteilig angepasst.
     {% endblocktrans %}
 {% endblock %}
