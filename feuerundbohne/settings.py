@@ -180,8 +180,19 @@ ORGANISATION_BANK_CONNECTION = {"PC" : "46-110-7",
             "BIC" : "ABSOCH22XXX",
             "NAME" : "Alternative Bank Schweiz",
             "ESR" : ""}
+MEMBERSHIP = {
+    'enable': True,
+    'required_shares': 1,
+    'cumulative_shares': False,
+    'required_on_signup': False,
+    'fee': 0,
+    'sync_shares': True,
+}
+REQUIRED_SHARES = 0
 SHARE_PRICE = "250"
-
+CURRENCY = "{} CHF"
+ALLOW_JOB_UNSUBSCRIBE = True
+BUSINESS_YEAR_CANCELATION_MONTH = 9
 CONTACTS = {
     "general": "info@feuerundbohne.ch"
 }
@@ -191,12 +202,11 @@ ORGANISATION_WEBSITE = {
     'url': "https://www.feuerundbohne.ch"
 }
 
-
-BUSINESS_REGULATIONS = "https://www.feuerundbohne.ch/app/download/12971934726/Betriebsreglement_ab+GV+2024.pdf?t=1755644483"
-BYLAWS = "https://www.feuerundbohne.ch/app/download/12959423926/Statuten.pdf?t=1755644483"
+LINK_BUSINESS_REGULATIONS = "https://www.feuerundbohne.ch/app/download/12971934726/Betriebsreglement_ab+GV+2024.pdf?t=1755644483"
+LINK_BYLAWS = "https://www.feuerundbohne.ch/app/download/12959423926/Statuten.pdf?t=1755644483"
 DOCUMENTS = [
-    ((_('Betriebsreglement'), _('das Betriebsreglement')), BUSINESS_REGULATIONS, 'account-signup-accept subscription'),
-    ((_('Statuten (Ausgabe 06.12.2021)'), _('die Statuten')), BYLAWS, 'membership-signup-accept account subscription'),
+    (('Betriebsreglement', 'das Betriebsreglement'), LINK_BUSINESS_REGULATIONS, 'account-signup-accept subscription'),
+    (('Statuten (Ausgabe 06.12.2021)', 'die Statuten'), LINK_BYLAWS, 'membership-signup-accept account subscription'),
 #    ((_('DSGVO Infos'), _('die DSGVO Infos')), GDPR_INFO, 'account-signup-accept subscription'),
 #    (_('Häufig gestellte Fragen'), FAQ_DOC, 'account subscription'),
 #    (_('Infos zu den Zusatz-Abos'), EXTRA_SUB_INFO, 'extrasub'),
